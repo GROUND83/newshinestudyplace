@@ -59,7 +59,7 @@ export default function Home() {
             <Image src={googleplay} width={80} height={80} alt="googleplay" />
           </div>
           <div className="flex flex-row items-center justify-center px-12 py-3 mt-12 mb-24 rounded-full bg-emerald-500">
-            <p className="font-bold text-white">뉴샤IN독서실</p>
+            <p className="font-bold text-white">샤IN독서실</p>
             <p className="text-white">을 검색해보세요.</p>
           </div>
         </div>

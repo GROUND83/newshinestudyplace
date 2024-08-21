@@ -83,23 +83,23 @@ export default function Home() {
           <div className="grid w-full grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-12 ">
             <div className="flex flex-col items-center justify-between col-span-1 overflow-hidden  bg-neutral-50 border">
               <Image src={aSeat} width={500} height={300} alt="독서실이미지" />
-              <div className="flex flex-col items-start flex-1 w-full p-3">
+              <div className="flex flex-col items-start flex-1 w-full p-3 text-black">
                 <h2 className="p-6 text-2xl font-bold text-black">A석</h2>
                 <div className="flex flex-row items-center justify-between w-full p-6 mt-3">
                   <p className="font-bold text-black ">가격</p>
                   <p className="font-bold text-black ">일반(샤인학원생)</p>
                 </div>
-                <div className="flex flex-row items-center justify-between w-full p-6 border-b">
-                  <p className="text-light ">1일석</p>
-                  <p className="text-light ">10,000원(8,000원)</p>
+                <div className="flex flex-row items-center justify-between w-full p-6 border-b text-black">
+                  <p className="text-light text-black">1일석</p>
+                  <p className="text-light text-black">10,000원(8,000원)</p>
                 </div>
-                <div className="flex flex-row items-center justify-between w-full p-6 border-b">
-                  <p className="text-light ">15일석</p>
-                  <p className="text-light ">100,000원(80,000원)</p>
+                <div className="flex flex-row items-center justify-between w-full p-6 border-b ">
+                  <p className="text-light text-black ">15일석</p>
+                  <p className="text-light text-black">100,000원(80,000원)</p>
                 </div>
                 <div className="flex flex-row items-center justify-between w-full p-6 ">
-                  <p className="text-light ">30일석</p>
-                  <p className="text-light ">180,000원(150,000원)</p>
+                  <p className="text-light text-black">30일석</p>
+                  <p className="text-light text-black">180,000원(150,000원)</p>
                 </div>
               </div>
             </div>
@@ -112,16 +112,16 @@ export default function Home() {
                   <p className="font-bold text-black ">일반(샤인학원생)</p>
                 </div>
                 <div className="flex flex-row items-center justify-between w-full p-6 border-b">
-                  <p className="text-light ">1일석</p>
-                  <p className="text-light ">9,000원(7,000)원</p>
+                  <p className="text-light text-black">1일석</p>
+                  <p className="text-light text-black">9,000원(7,000)원</p>
                 </div>
                 <div className="flex flex-row items-center justify-between w-full p-6 border-b">
-                  <p className="text-light ">15일석</p>
-                  <p className="text-light ">90,000원(70,000)원</p>
+                  <p className="text-light text-black">15일석</p>
+                  <p className="text-light text-black">90,000원(70,000)원</p>
                 </div>
                 <div className="flex flex-row items-center justify-between w-full p-6 ">
-                  <p className="text-light ">30일석</p>
-                  <p className="text-light ">160,000원(130,000)원</p>
+                  <p className="text-light text-black">30일석</p>
+                  <p className="text-light text-black">160,000원(130,000)원</p>
                 </div>
               </div>
             </div>
@@ -134,16 +134,16 @@ export default function Home() {
                   <p className="font-bold text-black ">일반(샤인학원생)</p>
                 </div>
                 <div className="flex flex-row items-center justify-between w-full p-6 border-b">
-                  <p className="text-light ">1일석</p>
-                  <p className="text-light ">8,000원(6,000원)</p>
+                  <p className="text-light text-black">1일석</p>
+                  <p className="text-light text-black">8,000원(6,000원)</p>
                 </div>
                 <div className="flex flex-row items-center justify-between w-full p-6 border-b">
-                  <p className="text-light ">15일석</p>
-                  <p className="text-light ">80,000원(60,000원)</p>
+                  <p className="text-light text-black ">15일석</p>
+                  <p className="text-light text-black">80,000원(60,000원)</p>
                 </div>
                 <div className="flex flex-row items-center justify-between w-full p-6 ">
-                  <p className="text-light ">30일석</p>
-                  <p className="text-light ">130,000원(100,000원)</p>
+                  <p className="text-light text-black">30일석</p>
+                  <p className="text-light text-black">130,000원(100,000원)</p>
                 </div>
               </div>
             </div>
@@ -155,8 +155,10 @@ export default function Home() {
                   <p className="font-bold text-black ">일반(샤인학원생)</p>
                 </div>
                 <div className="flex flex-row items-center justify-between w-full p-6 border-b">
-                  <p className="text-light ">50시간 (이용기간 60일)</p>
-                  <p className="text-light ">60,000원</p>
+                  <p className="text-light text-black">
+                    50시간 (이용기간 60일)
+                  </p>
+                  <p className="text-light text-black">60,000원</p>
                 </div>
 
                 <div className="flex flex-col items-start justify-between w-full p-6 gap-2 ">
@@ -196,8 +198,8 @@ export default function Home() {
                 <h2 className="text-xl font-bold text-black">라운지</h2>
 
                 <div className="flex flex-col items-center w-full ">
-                  <p className="text-light ">공용 프린터</p>
-                  <p className="text-light ">공용 컴퓨터 2대</p>
+                  <p className="text-light text-black">공용 프린터</p>
+                  <p className="text-light text-black">공용 컴퓨터 2대</p>
                 </div>
               </div>
             </div>
@@ -215,11 +217,11 @@ export default function Home() {
                   <h2 className="text-xl font-bold text-black">푸드룸</h2>
 
                   <div className="flex flex-col items-center w-full p-6 ">
-                    <p className="text-light ">냉장고</p>
-                    <p className="text-light ">전자레인지</p>
-                    <p className="text-light ">원두커피머신</p>
-                    <p className="text-light ">개인 컵 살균기</p>
-                    <p className="text-light ">정수기</p>
+                    <p className="text-light text-black">냉장고</p>
+                    <p className="text-light text-black">전자레인지</p>
+                    <p className="text-light text-black">원두커피머신</p>
+                    <p className="text-light text-black">개인 컵 살균기</p>
+                    <p className="text-light text-black">정수기</p>
                   </div>
                 </div>
               </div>
@@ -267,15 +269,15 @@ export default function Home() {
             <KakaoMap />
           </div>
           <p className="mt-6 ">제주시 연북로 638 2층</p>
-          <h2 className="mt-12 text-3xl font-bold ">문의</h2>
-          <p>064.723.3015</p>
+          <h2 className="mt-12 text-3xl font-bold text-black">문의</h2>
+          <p className="text-black">064.723.3015</p>
         </div>
       </section>
       <footer className=" flex flex-col items-center w-full px-12 mt-24 bg-neutral-100  py-24 border-t wf">
         <div className="flex flex-col items-start justify-end w-full  divide-y divide-gray-500 lg:items-center">
           <div className="flex flex-col items-start py-2 text-xs text-gray-500 lg:items-center lg:flex-row">
             <p>샤IN독서실</p>
-            <p className="lg:ml-3">대표 김호성</p>
+            <p className="lg:ml-3 ">대표 김호성</p>
             <p className="lg:ml-3">228-91-01740</p>
             <p className="lg:ml-3">제주특별자치도 제주시 연북로 638 2층</p>
             <a

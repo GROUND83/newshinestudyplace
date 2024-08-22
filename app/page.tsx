@@ -1,5 +1,6 @@
 import KakaoMap from "@/component/kakaoMap";
 import Image from "next/image";
+import Link from "next/link";
 
 const back1 =
   "https://imagedelivery.net/8GmAyNHLnOsSkmaGEU1nuA/79cfc850-66e3-4bb4-bb2d-25682a3f1f00/public";
@@ -23,7 +24,8 @@ const shoes1 =
   "https://imagedelivery.net/8GmAyNHLnOsSkmaGEU1nuA/7da6cb66-c385-4801-9aca-b3c1e1888300/public";
 const shoes =
   "https://imagedelivery.net/8GmAyNHLnOsSkmaGEU1nuA/7da6cb66-c385-4801-9aca-b3c1e1888300/public";
-export default function Home() {
+
+export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start bg-white">
       <div className="container mx-auto ">
@@ -45,8 +47,18 @@ export default function Home() {
                 <p className="text-sm">샤인스터디플레이스</p>
               </div>
             </div>
+            <Link href="/admin">관리자</Link>
           </div>
         </header>
+        <div className=" flex flex-col items-center justify-center w-full  bg-emerald-800 text-white py-24">
+          <p className="text-4xl font-black lg:text-6xl ">공지사항</p>
+          <p className="mt-12 text-center">
+            구글 정책 변경으로 인하여 2주간 안드로이드 샤인독서실 앱 <br />
+            다운이 불가 하오니 독서실 이용을 원하시면 <br />
+            010 2872 0404 로 연락 주시면 도움 드리겠습니다. <br />
+            (아이폰 앱스토어는 어플 정상 다운 가능)
+          </p>
+        </div>
         <div className=" flex flex-col items-center justify-center w-full h-[80vh]">
           <p className="text-4xl font-black lg:text-6xl text-emerald-800">
             전용 어플리케이션 출시

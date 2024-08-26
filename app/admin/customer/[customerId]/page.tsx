@@ -7,8 +7,8 @@ import {
   getCustomerDetail,
   resetPassWordCustomer,
 } from "../_component/actions";
-import { number, z } from "zod";
-import { useFieldArray, useForm } from "react-hook-form";
+import { z } from "zod";
+import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
@@ -81,7 +81,7 @@ export default function Page({ params }: { params: { customerId: string } }) {
     isError,
     refetch,
   } = useQuery({
-    queryKey: ["groupedit", fetchDataOptions],
+    queryKey: ["customerDetail", fetchDataOptions],
     queryFn: async () => {
       let res = await getCustomerDetail(params.customerId);
       if (res.data) {

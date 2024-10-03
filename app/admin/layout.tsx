@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import Link from "next/link";
-import { PlusIcon } from "lucide-react";
+// import { PlusIcon } from "lucide-react";
 import { usePathname } from "next/navigation";
 import AuthProvider from "@/lib/authProvider";
 import { ReactQueryClientProvider } from "@/lib/react-query/queryProvider";

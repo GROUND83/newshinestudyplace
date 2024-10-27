@@ -1,5 +1,9 @@
+"use client";
 import React from "react";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
+import { MoveLeft } from "lucide-react";
 
 // import GroupData from "@/components/commonUi/groupData";
 // import { MainTitleWrap, SubWrap } from "@/components/commonUi/mainTitleWrap";
@@ -9,11 +13,16 @@ export default function Layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const router = useRouter();
   return (
     <div>
-      <div className="w-full bg-white border-b  px-3 flex flex-row items-center justify-between h-[70px]">
+      <div className="w-full bg-white border-b  px-3 flex flex-row items-center justify-start h-[70px] gap-3">
         {/* <GroupData /> */}
-        <p>고객관리</p>
+        <Button onClick={() => router.back()}>
+          <MoveLeft />
+        </Button>
+        {/* <Link href={"/admin"}>back</Link> */}
+        <p className=" font-bold">고객관리</p>
         {/* {pathname === "/admin/group" && (
           <Button asChild size={"sm"}>
             <Link

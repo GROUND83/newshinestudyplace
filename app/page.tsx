@@ -47,10 +47,10 @@ export default function Page() {
                 <p className="text-sm">샤인스터디플레이스</p>
               </div>
             </div>
-            <Link href="/admin">관리자</Link>
+            {/* <Link href="/admin">관리자</Link> */}
           </div>
         </header>
-        <div className=" flex flex-col items-center justify-center w-full  bg-emerald-800 text-white py-24">
+        {/* <div className=" flex flex-col items-center justify-center w-full  bg-emerald-800 text-white py-24">
           <p className="text-4xl font-black lg:text-6xl ">공지사항</p>
           <p className="mt-12 text-center">
             구글 정책 변경으로 인하여 2주간 안드로이드 샤인독서실 앱 <br />
@@ -58,7 +58,7 @@ export default function Page() {
             010 2872 0404 로 연락 주시면 도움 드리겠습니다. <br />
             (아이폰 앱스토어는 어플 정상 다운 가능)
           </p>
-        </div>
+        </div> */}
         <div className=" flex flex-col items-center justify-center w-full h-[80vh]">
           <p className="text-4xl font-black lg:text-6xl text-emerald-800">
             전용 어플리케이션 출시
@@ -168,11 +168,16 @@ export default function Page() {
                 </div>
                 <div className="flex flex-row items-center justify-between w-full p-6 border-b">
                   <p className="text-light text-black">
-                    50시간 (이용기간 60일)
+                    50시간 (이용기간 : 구매 후 30일)
                   </p>
                   <p className="text-light text-black">60,000원</p>
                 </div>
-
+                <div className="flex flex-row items-center justify-between w-full p-6 border-b">
+                  <p className="text-light text-black">
+                    100시간 (이용기간 : 구매 후 60일)
+                  </p>
+                  <p className="text-light text-black">110,000원</p>
+                </div>
                 <div className="flex flex-col items-start justify-between w-full p-6 gap-2 ">
                   <p className="text-indigo-500 font-bold">
                     시간제 사용 시 주의사항

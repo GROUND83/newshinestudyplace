@@ -30,8 +30,6 @@ const LoginWrap = () => {
   const [loading, setLoading] = React.useState(false);
   const searchParams = useSearchParams();
 
-  const type = searchParams.get("type");
-  console.log("type", type);
   //
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -45,12 +43,11 @@ const LoginWrap = () => {
     try {
       setLoading(true);
       let formData = new FormData();
-      if (type === "admin") {
-        formData.append("email", data.email);
-        formData.append("password", data.password);
-        formData.append("role", "admin");
-        formData.append("callbackUrl", "/admin");
-      }
+
+      formData.append("email", data.email);
+      formData.append("password", data.password);
+      formData.append("role", "admin");
+      formData.append("callbackUrl", "/admin");
 
       //
       let res = await authenticate(formData);
@@ -62,17 +59,10 @@ const LoginWrap = () => {
           toast.error(resdata.passwrod);
         }
       } else {
-        console.log("res", res, type);
-        if (type === "admin") {
-          console.log("이동");
-          router.push("/admin");
-        }
-        if (type === "student") {
-          router.push("/student");
-        }
-        if (type === "teacher") {
-          router.push("/teacher");
-        }
+        console.log("res", res);
+
+        console.log("이동");
+        router.push("/admin");
       }
     } catch (e: any) {
       console.log("ee,", e);
@@ -87,14 +77,7 @@ const LoginWrap = () => {
         <div className="flex flex-col items-center gap-12    border p-6 lg:p-12 rounded-md bg-white  w-full lg:w-1/2">
           {/* <Logo /> */}
 
-          <p className="text-2xl font-bold">
-            {type === "admin"
-              ? "관리자"
-              : type === "teacher"
-              ? "리더"
-              : "교욱생"}{" "}
-            로그인
-          </p>
+          <p className="text-2xl font-bold">관리자 로그인</p>
 
           <Form {...form}>
             <form
@@ -139,13 +122,7 @@ const LoginWrap = () => {
                 {loading ? (
                   <Loader2 className="size-4 animate-spin" />
                 ) : (
-                  `${
-                    type === "admin"
-                      ? "관리자"
-                      : type === "teacher"
-                      ? "리더"
-                      : "교욱생"
-                  } 로그인`
+                  <p>관리자 로그인</p>
                 )}
               </Button>
             </form>
@@ -160,11 +137,5 @@ const LoginWrap = () => {
     </main>
   );
 };
-const LoginComponent = () => {
-  return (
-    <Suspense>
-      <LoginWrap />
-    </Suspense>
-  );
-};
-export default LoginComponent;
+
+export default LoginWrap;

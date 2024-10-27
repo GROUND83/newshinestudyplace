@@ -38,7 +38,7 @@ export default function Search({ placeHolder }: { placeHolder: string }) {
   }, [search]);
 
   return (
-    <div className="flex flex-row items-center justify-between space-x-2  h-[50px] bg-neutral-100 border-b px-3 border-t">
+    <div className=" w-full flex flex-row items-center justify-between space-x-2  h-[50px] bg-neutral-100 border-b px-3 border-t">
       <Input
         value={search}
         onChange={(e) => setSearch(e.target.value)}
